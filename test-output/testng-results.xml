@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="mySuite" duration-ms="44651" started-at="2024-05-30T18:28:29Z" finished-at="2024-05-30T18:29:14Z">
+    <groups>
+    </groups>
+    <test name="myTest" duration-ms="44651" started-at="2024-05-30T18:28:29Z" finished-at="2024-05-30T18:29:14Z">
+      <class name="com.inetBanking.testCases.TC_001_LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_001_LoginTest@5f9d02cb]" name="setup" is-config="true" duration-ms="11985" started-at="2024-05-30T23:58:30Z" finished-at="2024-05-30T23:58:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.inetBanking.testCases.TC_001_LoginTest@5f9d02cb]" name="loginTest" duration-ms="6114" started-at="2024-05-30T23:58:42Z" finished-at="2024-05-30T23:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_001_LoginTest@5f9d02cb]" name="tearDown" is-config="true" duration-ms="806" started-at="2024-05-30T23:58:48Z" finished-at="2024-05-30T23:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking.testCases.TC_001_LoginTest -->
+      <class name="com.inetBanking.testCases.TC_003_AddCustomerTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_003_AddCustomerTest@63753b6d]" name="setup" is-config="true" duration-ms="7259" started-at="2024-05-30T23:58:49Z" finished-at="2024-05-30T23:58:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="addNewCustomer()[pri:0, instance:com.inetBanking.testCases.TC_003_AddCustomerTest@63753b6d]" name="addNewCustomer" duration-ms="16949" started-at="2024-05-30T23:58:56Z" finished-at="2024-05-30T23:59:13Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : please fill all fields}  (Session info: chrome=125.0.6422.113): please fill all fieldsBuild info: version: '4.12.1', revision: '8e34639b11'System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCommand: [40cb62eb6aafdf4de3e1971fc2aedd6b, getPageSource {}]Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61677/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}Session ID: 40cb62eb6aafdf4de3e1971fc2aedd6b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : please fill all fields}  (Session info: chrome=125.0.6422.113): please fill all fieldsBuild info: version: '4.12.1', revision: '8e34639b11'System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCommand: [40cb62eb6aafdf4de3e1971fc2aedd6b, getPageSource {}]Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61677/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}Session ID: 40cb62eb6aafdf4de3e1971fc2aedd6bat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:385)at com.inetBanking.testCases.TC_003_AddCustomerTest.addNewCustomer(TC_003_AddCustomerTest.java:44)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_003_AddCustomerTest@63753b6d]" name="tearDown" is-config="true" duration-ms="918" started-at="2024-05-30T23:59:13Z" finished-at="2024-05-30T23:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking.testCases.TC_003_AddCustomerTest -->
+    </test> <!-- myTest -->
+  </suite> <!-- mySuite -->
+</testng-results>
